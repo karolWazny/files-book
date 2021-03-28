@@ -9,5 +9,9 @@ if __name__ == '__main__':
     for line in lines:
         pi_string += line.strip()
 
-    print(f"{pi_string[:52]}...")
-    print(len(pi_string))
+    birthday = input("Podaj datę swoich urodzin (w formacie ddmmrr): ")
+
+    if birthday in pi_string:
+        print("Twoja data urodzin znajduje się w pierwszym milionie cyfr liczby PI!")
+    else:
+        print("Twoja data urodzin nie znajduje się w pierwszym milionie cyfr liczby PI. :(")
